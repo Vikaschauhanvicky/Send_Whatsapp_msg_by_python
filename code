@@ -1,0 +1,18 @@
+# Import the `pywhatkit` module, which is a Python library for performing various tasks like sending WhatsApp messages, searching on the web, etc.
+import pywhatkit
+
+# Create a variable `phone_number` and store the recipient's phone number in it.
+# In this example, the recipient's phone number is prefixed with "+91" to represent the country code for India.
+phone_number = "+91" + "1234567890"
+
+# Use the `pywhatkit.sendwhatmsg()` function to send a WhatsApp message.
+# Parameters:
+# - `phone_number`: The recipient's phone number to whom you want to send the message.
+# - `"test3"`: The content of the message you want to send.
+# - `0`: The hour at which you want to send the message (in 24-hour format).
+# - `6`: The minute at which you want to send the message.
+# The above parameters, "0" and "6", represent the time as 00:06 (6 minutes past midnight).
+# The function will open a WhatsApp web instance and send the message at the specified time.
+pywhatkit.sendwhatmsg(phone_number, "test3", 0, 6)
+
+
